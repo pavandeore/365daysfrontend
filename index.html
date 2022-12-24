@@ -8,27 +8,250 @@
     <!-- <link rel="stylesheet" href="/dist/style.css" />  -->
     <!--  <link rel="stylesheet" href="/styles/style.css" /> -->
     <style>
-        html {
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
-        a{
-            text-decoration: none;
-            color: unset;
-        }
-        .demo-btn{
-            margin-left: auto!important;
-            width: auto!important;
-            padding: 5px 20px!important;
-            border-radius: 4px!important;
-            border: 3px dashed #0064ff!important;
-            cursor: pointer!important;
-            box-shadow:0 .125rem .25rem rgba(0,0,0,.075)!important;
-        }
-        body{height:100%;background:linear-gradient(180deg,rgba(0,41,255,.02)0,rgba(0,41,255,0) 100%)}label{width:100%}input,label,textarea{display:block}ul{list-style:none;margin:0;padding:0}li{padding:.3em}span{font-weight:700;color:#102a43;line-height:35px;line-height:2.5rem;font-size:12px;font-size:.8rem;text-transform:uppercase}input[type=submit]{background:#4369fc;color:#fff;font-weight:700;font-size:1.2rem;border-radius:5px;margin-top:1.3em}.container-w{width:460px;margin:5em auto}form,input,textarea{background-color:#fff;border-radius:3px}form{padding:40px;box-shadow:0 20px 40px rgba(0,0,0,.1);overflow:hidden}.required-star{color:#fc4366}input,textarea{width:100%;padding:9px 20px;border:1px solid #e1e2eb;color:#102a43;caret-color:#829ab1;box-sizing:border-box;font-size:14px;font-size:1rem;box-shadow:inset 0 2px 4px 0 rgba(206,209,224,.2);line-height:29px;line-height:2rem}
-        
-        *{font-family:Arial,Helvetica,sans-serif}body{margin:0}.text-center{text-align:center}.text-white{color:#fff}.heading{color:#fff;margin:0;font-size:2.3rem}.container{margin:0;padding:15px}.bg-black{background: -webkit-linear-gradient(to right, #89216B, #DA4453); 
-background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}.shadow-icon{background-color:#fff;height:40px;width:40px;margin-left:25px;text-align:center;display:flex;align-items:center;justify-content:center;padding:2px}.d-flex{display:flex}small{font-size:1rem;color:#6495ed}.py-3{padding-top:20px;padding-bottom:20px}@media (max-width:1250px){article{flex-direction:column}}@media (max-width:650px){.heading{font-size:1.5rem}.header-div{ flex-direction: column!important; }.demo-btn{margin-top:25px!important;}}@media (max-width:400px){.heading{font-size:1.2rem}}article{box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important;padding:15px;margin-bottom:20px;display:flex;justify-content:space-between;align-items:center;border:1px solid #757575}.view{padding:10px 25px;border:2px solid #3a3737;border-left:3px solid #6495ed;box-shadow:0 .125rem .25rem rgba(0,0,0,.075)!important;background-color:transparent;cursor:pointer;border-top-left-radius:3px;border-bottom-left-radius:3px;font-size:.95rem;align-items:center}kbd{font-size:.8rem;background-color:#252525;color:#fff;padding:5px 10px;border-radius:6px;position:absolute;margin-left:10px}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.demo-btn {
+    margin-left: auto!important;
+    width: auto!important;
+    padding: 5px 20px!important;
+    border-radius: 4px!important;
+    border: 3px dashed #0064ff!important;
+    cursor: pointer!important;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.align-items{
+    align-items: center;
+}
+#banner-show{
+    background: #d0e5ff;
+}
+#banner-show > div{
+    width: 100%;
+}
+.bs-heading{
+    font-size: 2rem;
+    text-align: center;
+}
+.bs-link{
+    color: #370daa;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+.content-between{
+    justify-content: space-between;
+}
+.content-center{
+    justify-content: center;
+}
+body {
+    height: 100%;
+    background: linear-gradient(180deg,rgba(0,41,255,.02)0,rgba(0,41,255,0) 100%)
+}
+
+label {
+    width: 100%
+}
+
+input,label,textarea {
+    display: block
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+li {
+    padding: .3em
+}
+
+span {
+    font-weight: 700;
+    color: #102a43;
+    line-height: 35px;
+    line-height: 2.5rem;
+    font-size: 12px;
+    font-size: .8rem;
+    text-transform: uppercase
+}
+
+input[type=submit] {
+    background: #4369fc;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 1.3em
+}
+
+.container-w {
+    width: 460px;
+    margin: 5em auto
+}
+
+form,input,textarea {
+    background-color: #fff;
+    border-radius: 3px
+}
+
+form {
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.1);
+    overflow: hidden
+}
+
+.required-star {
+    color: #fc4366
+}
+
+input,textarea {
+    width: 100%;
+    padding: 9px 20px;
+    border: 1px solid #e1e2eb;
+    color: #102a43;
+    caret-color: #829ab1;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px 0 rgba(206,209,224,.2);
+    line-height: 29px;
+    line-height: 2rem
+}
+
+* {
+    font-family: Arial,Helvetica,sans-serif
+}
+
+body {
+    margin: 0
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-white {
+    color: #fff
+}
+
+.heading {
+    color: #fff;
+    margin: 0;
+    font-size: 2.3rem
+}
+
+.container {
+    margin: 0;
+    padding: 50px;
+
+}
+
+.bg-black {
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);
+    background: linear-gradient(to right, #89216B, #DA4453);
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.shadow-icon {
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    margin-left: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px
+}
+
+.d-flex {
+    display: flex
+}
+
+small {
+    font-size: 1rem;
+    color: #6495ed
+}
+
+.py-3 {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+.pt-3 {
+    padding-top: 20px;
+    /* padding-bottom: 20px */
+}
+
+
+@media (max-width:1250px) {
+    article {
+        flex-direction: column
+    }
+}
+
+@media (max-width:650px) {
+    .heading {
+        font-size: 1.5rem
+    }
+
+    .header-div {
+        flex-direction: column!important;
+    }
+
+    .demo-btn {
+        margin-top: 25px!important;
+    }
+}
+
+@media (max-width:400px) {
+    .heading {
+        font-size: 1.2rem
+    }
+}
+
+article {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    padding: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #757575
+}
+
+.view {
+    padding: 10px 25px;
+    border: 2px solid #3a3737;
+    border-left: 3px solid #6495ed;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    background-color: transparent;
+    cursor: pointer;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: .95rem;
+    align-items: center
+}
+
+kbd {
+    font-size: .8rem;
+    background-color: #252525;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    position: absolute;
+    margin-left: 10px
+}
+
+
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155135658-5"></script>
@@ -45,7 +268,7 @@ background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, F
     
     <div class="container bg-black">
         <h1 class="text-center heading">365DaysFrontendChallange <small>by pawan deore</small></h1>
-        <div class="d-flex py-3 header-div">
+        <div class="d-flex pt-3 header-div">
             <p class="text-white"> Follow me on </p>
             <div class="shadow-icon"><a target="_blank" href="https://www.linkedin.com/in/pawan-deore-0bb60b1a4/"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> </a></div>
             <div class="shadow-icon"><a target="_blank" href="https://github.com/pavandeore"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> </a></div>
@@ -76,6 +299,16 @@ background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, F
          <article>
             <h2>console.dir use in JavaScript <kbd>6 / 365</kbd> </h2>
             <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6885246772801888257-FFz3"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article id="banner-show">
+            <div class="d-flex align-items content-center">
+                
+                <h2 class="bs-heading"> 🤩 Loved the Content?</h2>
+                <div>
+                    <a class="bs-link" target="_blank" href="https://www.buymeacoffee.com/pawandeore">Buy me a Coffee</a>
+                </div>
+                
+            </div>
         </article>
          <article>
             <h2>CSS variables use <kbd>7 / 365</kbd> </h2>
@@ -275,12 +508,1633 @@ background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, F
             <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
             <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
         </article>
+
+        <article>
+            <h2> Get Battery percentage of User with JS  <kbd>47 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-activity-6900093315639779328-A2Xy?utm_source=share&utm_medium=member_desktop"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> CSS math functions  <kbd>48 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-devcommunity-activity-6900449921435013120-XrlU?utm_source=share&utm_medium=member_desktop"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> how to detect screen orientation in CSS  <kbd>49 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>50 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
         
+        <article>
+            <h2>How web works <kbd>51 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_html-css-javascript-activity-6883284386934996992-mmZ0"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article>
+            <h2>Primitive Datatypes in JavaScript <kbd>52 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_html-css-javascript-activity-6883766490240221184-qBXq"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>String Methods in JavaScript <kbd>53 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_string-method-guide-activity-6884164799484243968-ozJz"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS enabled console messages <kbd>54 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-css-activity-6884479191908200448-ORL4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2> How to rotate Text Vertical using CSS <kbd>55 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6884845445810585601-UlWh"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>console.dir use in JavaScript <kbd>56 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6885246772801888257-FFz3"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article id="banner-show">
+            <div class="d-flex align-items content-center">
+                
+                <h2 class="bs-heading"> 🤩 Loved the Content?</h2>
+                <div>
+                    <a class="bs-link" target="_blank" href="https://www.buymeacoffee.com/pawandeore">Buy me a Coffee</a>
+                </div>
+                
+            </div>
+        </article>
+         <article>
+            <h2>CSS variables use <kbd>57 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6885431431846264832-fUX-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS specificity <kbd>58 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6885743210564530176-SRDG"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article>
+            <h2>Accordion with HTML only <kbd>59 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-devcommunity-activity-6886284496690319360-6PTo"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Conditional (ternary) operator <kbd>60 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6886722225005740032-_PQO"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Defer vs Async in script tag <kbd>61 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-javascript-activity-6887082232108916736-jEk4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> center a div ( multiple approaches ) <kbd>62 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6887432220571705344-Z5O-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  rapid development with vscode  <kbd>63 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-devcommunity-activity-6887809425638268928-eJhM"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  inline-block property in CSS  <kbd>64 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6888082449402785792-F_x5"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  z-index property in CSS  <kbd>65 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6888446401613754368-8EeQ"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  var declaration in JS  <kbd>66 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-activity-6888885604331925504-bEli"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> different ways to create function in JS  <kbd>67 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6889238988763275264-q93p"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  console.table in JavaScript  <kbd>68 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6889601796906524672-SxqC"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> remove duplicates from array using Set <kbd>69 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6889942293361561600-5w35"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  array sort function <kbd>70 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-activity-6890358346377940993-X4dn"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  substr() function in JavaScript <kbd>71 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6890708953139884032-EPqj"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Properties which are skipped / ignored by JSON.stringify <kbd>72 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6891031824227725312-nlL4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  IIFE example in JavaScript <kbd>73 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-activity-6891415278782099456-MfjO"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   text-indent in CSS  <kbd>74 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6891794600432861184-84Ei"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   HTTP Methods  <kbd>75 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6892161100159225856-MFNN"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> rel="preconnect" <kbd>76 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6892484829170995201-BfWL"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Frontend Meme  <kbd>77 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontendmeme-activity-6892831407308115968-d8Yy"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> convert Array to Object using spread  <kbd>78 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6893249673688092672-T5Ut"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> ways to convert string to number in JS <kbd>79 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6893551792131514368-Whyd"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> get list of all properties using __proto__ <kbd>80 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_365daysfrontendchallange-day-30-365-activity-6893980388155289600-KwqL"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   available properties in Set with its example  <kbd>81 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6894302715271290880-a0sx"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  print 2nd largest num from array using set <kbd>82 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-activity-6894672690045624321-gT5f"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> single line code to check for palindrome in JS  <kbd>83 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-365daysofcode-activity-6895047016309673984-hrqN"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> how to view your github repo in VScode on chrome itself ! <kbd>84 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6895426934688276480-Mbbq"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   localStorage properties  <kbd>85 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6895757540710244352-gCQ-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Search filter List using vanilla JS  <kbd>86 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6896089498900336640-HeuF"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  Simple animation in CSS  <kbd>87 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6896495302543491072-Rd0m"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> how to vibrate device using JavaScript   <kbd>88 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-devcommunity-frontend-activity-6896805151428935680-QoqH"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> filter list application in vanilla JS with dynamic DATA  <kbd>89 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-activity-6897173246156824576-g3ae"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Get Starter Syntax & speed-up your development  <kbd>90 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_devhints-tldr-for-developer-documentation-activity-6897551054825680896-02Ot"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  toFixed() method  <kbd>91 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-devcommunity-activity-6897945111192240128-6AUQ"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  :is() pseudo-class function <kbd>92 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6898312877380300801-eaUR"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  indexOf property in JavaScript  <kbd>93 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-activity-6898656355251474432-amPM"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  Nullish coalescing operator '??'  <kbd>94 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-activity-6899053849206677504-CpBg?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  for in & for of loop with Array in JS  <kbd>95 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-activity-6899401056971739136-kY_W?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        
+        <article>
+            <h2> script to check tab is active or not  <kbd>96 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>97 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>98 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>99 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>100 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+
+
+        <article>
+            <h2>How web works <kbd>101 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_html-css-javascript-activity-6883284386934996992-mmZ0"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article>
+            <h2>Primitive Datatypes in JavaScript <kbd>102 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_html-css-javascript-activity-6883766490240221184-qBXq"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>String Methods in JavaScript <kbd>103 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_string-method-guide-activity-6884164799484243968-ozJz"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS enabled console messages <kbd>104 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-css-activity-6884479191908200448-ORL4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2> How to rotate Text Vertical using CSS <kbd>105 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6884845445810585601-UlWh"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>console.dir use in JavaScript <kbd>106 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6885246772801888257-FFz3"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article id="banner-show">
+            <div class="d-flex align-items content-center">
+                
+                <h2 class="bs-heading"> 🤩 Loved the Content?</h2>
+                <div>
+                    <a class="bs-link" target="_blank" href="https://www.buymeacoffee.com/pawandeore">Buy me a Coffee</a>
+                </div>
+                
+            </div>
+        </article>
+         <article>
+            <h2>CSS variables use <kbd>107 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6885431431846264832-fUX-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS specificity <kbd>108 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6885743210564530176-SRDG"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article>
+            <h2>Accordion with HTML only <kbd>109 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-devcommunity-activity-6886284496690319360-6PTo"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Conditional (ternary) operator <kbd>110 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6886722225005740032-_PQO"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Defer vs Async in script tag <kbd>111 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-javascript-activity-6887082232108916736-jEk4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> center a div ( multiple approaches ) <kbd>112 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6887432220571705344-Z5O-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  rapid development with vscode  <kbd>113 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-devcommunity-activity-6887809425638268928-eJhM"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  inline-block property in CSS  <kbd>114 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6888082449402785792-F_x5"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  z-index property in CSS  <kbd>115 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6888446401613754368-8EeQ"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  var declaration in JS  <kbd>116 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-activity-6888885604331925504-bEli"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> different ways to create function in JS  <kbd>117 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6889238988763275264-q93p"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  console.table in JavaScript  <kbd>118 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6889601796906524672-SxqC"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> remove duplicates from array using Set <kbd>119 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6889942293361561600-5w35"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  array sort function <kbd>120 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-activity-6890358346377940993-X4dn"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  substr() function in JavaScript <kbd>121 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6890708953139884032-EPqj"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Properties which are skipped / ignored by JSON.stringify <kbd>122 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6891031824227725312-nlL4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  IIFE example in JavaScript <kbd>123 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-activity-6891415278782099456-MfjO"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   text-indent in CSS  <kbd>124 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6891794600432861184-84Ei"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   HTTP Methods  <kbd>125 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6892161100159225856-MFNN"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> rel="preconnect" <kbd>126 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6892484829170995201-BfWL"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Frontend Meme  <kbd>127 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontendmeme-activity-6892831407308115968-d8Yy"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> convert Array to Object using spread  <kbd>128 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6893249673688092672-T5Ut"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> ways to convert string to number in JS <kbd>129 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6893551792131514368-Whyd"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> get list of all properties using __proto__ <kbd>130 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_365daysfrontendchallange-day-30-365-activity-6893980388155289600-KwqL"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   available properties in Set with its example  <kbd>131 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6894302715271290880-a0sx"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  print 2nd largest num from array using set <kbd>132 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-activity-6894672690045624321-gT5f"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> single line code to check for palindrome in JS  <kbd>133 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-365daysofcode-activity-6895047016309673984-hrqN"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> how to view your github repo in VScode on chrome itself ! <kbd>134 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6895426934688276480-Mbbq"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   localStorage properties  <kbd>135 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6895757540710244352-gCQ-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Search filter List using vanilla JS  <kbd>136 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6896089498900336640-HeuF"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  Simple animation in CSS  <kbd>137 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6896495302543491072-Rd0m"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> how to vibrate device using JavaScript   <kbd>138 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-devcommunity-frontend-activity-6896805151428935680-QoqH"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> filter list application in vanilla JS with dynamic DATA  <kbd>139 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-activity-6897173246156824576-g3ae"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Get Starter Syntax & speed-up your development  <kbd>140 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_devhints-tldr-for-developer-documentation-activity-6897551054825680896-02Ot"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  toFixed() method  <kbd>141 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-devcommunity-activity-6897945111192240128-6AUQ"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  :is() pseudo-class function <kbd>142 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6898312877380300801-eaUR"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  indexOf property in JavaScript  <kbd>143 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-activity-6898656355251474432-amPM"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  Nullish coalescing operator '??'  <kbd>144 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-activity-6899053849206677504-CpBg?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  for in & for of loop with Array in JS  <kbd>145 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-activity-6899401056971739136-kY_W?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        
+        <article>
+            <h2> script to check tab is active or not  <kbd>146 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>147 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>148 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>149 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>150 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+
+        <article>
+            <h2>How web works <kbd>151 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_html-css-javascript-activity-6883284386934996992-mmZ0"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article>
+            <h2>Primitive Datatypes in JavaScript <kbd>152 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_html-css-javascript-activity-6883766490240221184-qBXq"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>String Methods in JavaScript <kbd>153 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_string-method-guide-activity-6884164799484243968-ozJz"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS enabled console messages <kbd>154 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-css-activity-6884479191908200448-ORL4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2> How to rotate Text Vertical using CSS <kbd>155 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6884845445810585601-UlWh"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>console.dir use in JavaScript <kbd>156 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6885246772801888257-FFz3"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article id="banner-show">
+            <div class="d-flex align-items content-center">
+                
+                <h2 class="bs-heading"> 🤩 Loved the Content?</h2>
+                <div>
+                    <a class="bs-link" target="_blank" href="https://www.buymeacoffee.com/pawandeore">Buy me a Coffee</a>
+                </div>
+                
+            </div>
+        </article>
+         <article>
+            <h2>CSS variables use <kbd>157 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6885431431846264832-fUX-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS specificity <kbd>158 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6885743210564530176-SRDG"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article>
+            <h2>Accordion with HTML only <kbd>159 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-devcommunity-activity-6886284496690319360-6PTo"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Conditional (ternary) operator <kbd>160 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6886722225005740032-_PQO"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Defer vs Async in script tag <kbd>111 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-javascript-activity-6887082232108916736-jEk4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> center a div ( multiple approaches ) <kbd>112 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6887432220571705344-Z5O-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  rapid development with vscode  <kbd>113 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-devcommunity-activity-6887809425638268928-eJhM"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  inline-block property in CSS  <kbd>114 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6888082449402785792-F_x5"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  z-index property in CSS  <kbd>115 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6888446401613754368-8EeQ"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  var declaration in JS  <kbd>116 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-activity-6888885604331925504-bEli"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> different ways to create function in JS  <kbd>17 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6889238988763275264-q93p"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  console.table in JavaScript  <kbd>18 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6889601796906524672-SxqC"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> remove duplicates from array using Set <kbd>19 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6889942293361561600-5w35"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  array sort function <kbd>20 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-activity-6890358346377940993-X4dn"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  substr() function in JavaScript <kbd>21 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6890708953139884032-EPqj"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Properties which are skipped / ignored by JSON.stringify <kbd>22 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6891031824227725312-nlL4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  IIFE example in JavaScript <kbd>23 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-activity-6891415278782099456-MfjO"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   text-indent in CSS  <kbd>24 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6891794600432861184-84Ei"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   HTTP Methods  <kbd>25 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6892161100159225856-MFNN"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> rel="preconnect" <kbd>26 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6892484829170995201-BfWL"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Frontend Meme  <kbd>27 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontendmeme-activity-6892831407308115968-d8Yy"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> convert Array to Object using spread  <kbd>28 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6893249673688092672-T5Ut"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> ways to convert string to number in JS <kbd>29 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6893551792131514368-Whyd"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> get list of all properties using __proto__ <kbd>30 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_365daysfrontendchallange-day-30-365-activity-6893980388155289600-KwqL"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   available properties in Set with its example  <kbd>31 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6894302715271290880-a0sx"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  print 2nd largest num from array using set <kbd>32 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-activity-6894672690045624321-gT5f"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> single line code to check for palindrome in JS  <kbd>33 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-365daysofcode-activity-6895047016309673984-hrqN"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> how to view your github repo in VScode on chrome itself ! <kbd>34 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6895426934688276480-Mbbq"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   localStorage properties  <kbd>35 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6895757540710244352-gCQ-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Search filter List using vanilla JS  <kbd>36 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6896089498900336640-HeuF"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  Simple animation in CSS  <kbd>37 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6896495302543491072-Rd0m"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> how to vibrate device using JavaScript   <kbd>38 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-devcommunity-frontend-activity-6896805151428935680-QoqH"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> filter list application in vanilla JS with dynamic DATA  <kbd>39 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-activity-6897173246156824576-g3ae"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Get Starter Syntax & speed-up your development  <kbd>40 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_devhints-tldr-for-developer-documentation-activity-6897551054825680896-02Ot"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  toFixed() method  <kbd>41 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-devcommunity-activity-6897945111192240128-6AUQ"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  :is() pseudo-class function <kbd>42 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6898312877380300801-eaUR"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  indexOf property in JavaScript  <kbd>43 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-activity-6898656355251474432-amPM"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  Nullish coalescing operator '??'  <kbd>44 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-activity-6899053849206677504-CpBg?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  for in & for of loop with Array in JS  <kbd>45 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-activity-6899401056971739136-kY_W?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+
+
+        <article>
+            <h2>How web works <kbd>1 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_html-css-javascript-activity-6883284386934996992-mmZ0"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article>
+            <h2>Primitive Datatypes in JavaScript <kbd>2 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_html-css-javascript-activity-6883766490240221184-qBXq"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>String Methods in JavaScript <kbd>3 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_string-method-guide-activity-6884164799484243968-ozJz"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS enabled console messages <kbd>4 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-css-activity-6884479191908200448-ORL4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2> How to rotate Text Vertical using CSS <kbd>5 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6884845445810585601-UlWh"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>console.dir use in JavaScript <kbd>6 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6885246772801888257-FFz3"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article id="banner-show">
+            <div class="d-flex align-items content-center">
+                
+                <h2 class="bs-heading"> 🤩 Loved the Content?</h2>
+                <div>
+                    <a class="bs-link" target="_blank" href="https://www.buymeacoffee.com/pawandeore">Buy me a Coffee</a>
+                </div>
+                
+            </div>
+        </article>
+         <article>
+            <h2>CSS variables use <kbd>7 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6885431431846264832-fUX-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS specificity <kbd>8 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6885743210564530176-SRDG"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article>
+            <h2>Accordion with HTML only <kbd>9 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-devcommunity-activity-6886284496690319360-6PTo"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Conditional (ternary) operator <kbd>10 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6886722225005740032-_PQO"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Defer vs Async in script tag <kbd>11 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-javascript-activity-6887082232108916736-jEk4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> center a div ( multiple approaches ) <kbd>12 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6887432220571705344-Z5O-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  rapid development with vscode  <kbd>13 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-devcommunity-activity-6887809425638268928-eJhM"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  inline-block property in CSS  <kbd>14 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6888082449402785792-F_x5"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  z-index property in CSS  <kbd>15 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6888446401613754368-8EeQ"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  var declaration in JS  <kbd>16 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-activity-6888885604331925504-bEli"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> different ways to create function in JS  <kbd>17 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6889238988763275264-q93p"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  console.table in JavaScript  <kbd>18 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6889601796906524672-SxqC"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> remove duplicates from array using Set <kbd>19 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6889942293361561600-5w35"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  array sort function <kbd>20 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-activity-6890358346377940993-X4dn"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  substr() function in JavaScript <kbd>21 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6890708953139884032-EPqj"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Properties which are skipped / ignored by JSON.stringify <kbd>22 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6891031824227725312-nlL4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  IIFE example in JavaScript <kbd>23 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-activity-6891415278782099456-MfjO"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   text-indent in CSS  <kbd>24 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6891794600432861184-84Ei"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   HTTP Methods  <kbd>25 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6892161100159225856-MFNN"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> rel="preconnect" <kbd>26 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6892484829170995201-BfWL"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Frontend Meme  <kbd>27 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontendmeme-activity-6892831407308115968-d8Yy"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> convert Array to Object using spread  <kbd>28 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6893249673688092672-T5Ut"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> ways to convert string to number in JS <kbd>29 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6893551792131514368-Whyd"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> get list of all properties using __proto__ <kbd>30 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_365daysfrontendchallange-day-30-365-activity-6893980388155289600-KwqL"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   available properties in Set with its example  <kbd>31 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6894302715271290880-a0sx"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  print 2nd largest num from array using set <kbd>32 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-activity-6894672690045624321-gT5f"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> single line code to check for palindrome in JS  <kbd>33 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-365daysofcode-activity-6895047016309673984-hrqN"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> how to view your github repo in VScode on chrome itself ! <kbd>34 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6895426934688276480-Mbbq"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   localStorage properties  <kbd>35 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6895757540710244352-gCQ-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Search filter List using vanilla JS  <kbd>36 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6896089498900336640-HeuF"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  Simple animation in CSS  <kbd>37 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6896495302543491072-Rd0m"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> how to vibrate device using JavaScript   <kbd>38 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-devcommunity-frontend-activity-6896805151428935680-QoqH"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> filter list application in vanilla JS with dynamic DATA  <kbd>39 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-activity-6897173246156824576-g3ae"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Get Starter Syntax & speed-up your development  <kbd>40 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_devhints-tldr-for-developer-documentation-activity-6897551054825680896-02Ot"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  toFixed() method  <kbd>41 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-devcommunity-activity-6897945111192240128-6AUQ"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  :is() pseudo-class function <kbd>42 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6898312877380300801-eaUR"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  indexOf property in JavaScript  <kbd>43 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-activity-6898656355251474432-amPM"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  Nullish coalescing operator '??'  <kbd>44 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-activity-6899053849206677504-CpBg?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  for in & for of loop with Array in JS  <kbd>45 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-activity-6899401056971739136-kY_W?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+
+
+        <article>
+            <h2>How web works <kbd>1 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_html-css-javascript-activity-6883284386934996992-mmZ0"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article>
+            <h2>Primitive Datatypes in JavaScript <kbd>2 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_html-css-javascript-activity-6883766490240221184-qBXq"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>String Methods in JavaScript <kbd>3 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_string-method-guide-activity-6884164799484243968-ozJz"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS enabled console messages <kbd>4 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-css-activity-6884479191908200448-ORL4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2> How to rotate Text Vertical using CSS <kbd>5 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6884845445810585601-UlWh"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>console.dir use in JavaScript <kbd>6 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6885246772801888257-FFz3"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article id="banner-show">
+            <div class="d-flex align-items content-center">
+                
+                <h2 class="bs-heading"> 🤩 Loved the Content?</h2>
+                <div>
+                    <a class="bs-link" target="_blank" href="https://www.buymeacoffee.com/pawandeore">Buy me a Coffee</a>
+                </div>
+                
+            </div>
+        </article>
+         <article>
+            <h2>CSS variables use <kbd>7 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6885431431846264832-fUX-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS specificity <kbd>8 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6885743210564530176-SRDG"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article>
+            <h2>Accordion with HTML only <kbd>9 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-devcommunity-activity-6886284496690319360-6PTo"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Conditional (ternary) operator <kbd>10 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6886722225005740032-_PQO"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Defer vs Async in script tag <kbd>11 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-javascript-activity-6887082232108916736-jEk4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> center a div ( multiple approaches ) <kbd>12 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6887432220571705344-Z5O-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  rapid development with vscode  <kbd>13 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-devcommunity-activity-6887809425638268928-eJhM"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  inline-block property in CSS  <kbd>14 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6888082449402785792-F_x5"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  z-index property in CSS  <kbd>15 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6888446401613754368-8EeQ"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  var declaration in JS  <kbd>16 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-activity-6888885604331925504-bEli"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> different ways to create function in JS  <kbd>17 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6889238988763275264-q93p"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  console.table in JavaScript  <kbd>18 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6889601796906524672-SxqC"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> remove duplicates from array using Set <kbd>19 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6889942293361561600-5w35"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  array sort function <kbd>20 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-activity-6890358346377940993-X4dn"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  substr() function in JavaScript <kbd>21 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6890708953139884032-EPqj"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Properties which are skipped / ignored by JSON.stringify <kbd>22 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6891031824227725312-nlL4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  IIFE example in JavaScript <kbd>23 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-activity-6891415278782099456-MfjO"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   text-indent in CSS  <kbd>24 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6891794600432861184-84Ei"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   HTTP Methods  <kbd>25 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6892161100159225856-MFNN"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> rel="preconnect" <kbd>26 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6892484829170995201-BfWL"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Frontend Meme  <kbd>27 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontendmeme-activity-6892831407308115968-d8Yy"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> convert Array to Object using spread  <kbd>28 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6893249673688092672-T5Ut"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> ways to convert string to number in JS <kbd>29 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6893551792131514368-Whyd"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> get list of all properties using __proto__ <kbd>30 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_365daysfrontendchallange-day-30-365-activity-6893980388155289600-KwqL"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   available properties in Set with its example  <kbd>31 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6894302715271290880-a0sx"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  print 2nd largest num from array using set <kbd>32 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-activity-6894672690045624321-gT5f"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> single line code to check for palindrome in JS  <kbd>33 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-365daysofcode-activity-6895047016309673984-hrqN"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> how to view your github repo in VScode on chrome itself ! <kbd>34 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6895426934688276480-Mbbq"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   localStorage properties  <kbd>35 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6895757540710244352-gCQ-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Search filter List using vanilla JS  <kbd>36 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6896089498900336640-HeuF"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  Simple animation in CSS  <kbd>37 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6896495302543491072-Rd0m"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> how to vibrate device using JavaScript   <kbd>38 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-devcommunity-frontend-activity-6896805151428935680-QoqH"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> filter list application in vanilla JS with dynamic DATA  <kbd>39 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-activity-6897173246156824576-g3ae"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Get Starter Syntax & speed-up your development  <kbd>40 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_devhints-tldr-for-developer-documentation-activity-6897551054825680896-02Ot"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  toFixed() method  <kbd>41 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-devcommunity-activity-6897945111192240128-6AUQ"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  :is() pseudo-class function <kbd>42 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6898312877380300801-eaUR"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  indexOf property in JavaScript  <kbd>43 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-activity-6898656355251474432-amPM"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  Nullish coalescing operator '??'  <kbd>44 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-activity-6899053849206677504-CpBg?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  for in & for of loop with Array in JS  <kbd>45 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-activity-6899401056971739136-kY_W?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+
+        <article>
+            <h2>How web works <kbd>1 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_html-css-javascript-activity-6883284386934996992-mmZ0"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article>
+            <h2>Primitive Datatypes in JavaScript <kbd>2 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_html-css-javascript-activity-6883766490240221184-qBXq"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>String Methods in JavaScript <kbd>3 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_string-method-guide-activity-6884164799484243968-ozJz"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS enabled console messages <kbd>4 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-css-activity-6884479191908200448-ORL4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2> How to rotate Text Vertical using CSS <kbd>5 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6884845445810585601-UlWh"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>console.dir use in JavaScript <kbd>6 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6885246772801888257-FFz3"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article id="banner-show">
+            <div class="d-flex align-items content-center">
+                
+                <h2 class="bs-heading"> 🤩 Loved the Content?</h2>
+                <div>
+                    <a class="bs-link" target="_blank" href="https://www.buymeacoffee.com/pawandeore">Buy me a Coffee</a>
+                </div>
+                
+            </div>
+        </article>
+         <article>
+            <h2>CSS variables use <kbd>7 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6885431431846264832-fUX-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS specificity <kbd>8 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6885743210564530176-SRDG"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article>
+            <h2>Accordion with HTML only <kbd>9 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-devcommunity-activity-6886284496690319360-6PTo"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Conditional (ternary) operator <kbd>10 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6886722225005740032-_PQO"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Defer vs Async in script tag <kbd>11 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-javascript-activity-6887082232108916736-jEk4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> center a div ( multiple approaches ) <kbd>12 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6887432220571705344-Z5O-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  rapid development with vscode  <kbd>13 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-devcommunity-activity-6887809425638268928-eJhM"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  inline-block property in CSS  <kbd>14 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6888082449402785792-F_x5"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  z-index property in CSS  <kbd>15 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6888446401613754368-8EeQ"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  var declaration in JS  <kbd>16 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-activity-6888885604331925504-bEli"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> different ways to create function in JS  <kbd>17 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6889238988763275264-q93p"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  console.table in JavaScript  <kbd>18 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6889601796906524672-SxqC"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> remove duplicates from array using Set <kbd>19 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6889942293361561600-5w35"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  array sort function <kbd>20 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-activity-6890358346377940993-X4dn"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  substr() function in JavaScript <kbd>21 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6890708953139884032-EPqj"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Properties which are skipped / ignored by JSON.stringify <kbd>22 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6891031824227725312-nlL4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  IIFE example in JavaScript <kbd>23 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-activity-6891415278782099456-MfjO"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   text-indent in CSS  <kbd>24 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6891794600432861184-84Ei"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   HTTP Methods  <kbd>25 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6892161100159225856-MFNN"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> rel="preconnect" <kbd>26 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6892484829170995201-BfWL"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Frontend Meme  <kbd>27 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontendmeme-activity-6892831407308115968-d8Yy"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> convert Array to Object using spread  <kbd>28 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6893249673688092672-T5Ut"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> ways to convert string to number in JS <kbd>29 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6893551792131514368-Whyd"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> get list of all properties using __proto__ <kbd>30 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_365daysfrontendchallange-day-30-365-activity-6893980388155289600-KwqL"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   available properties in Set with its example  <kbd>31 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6894302715271290880-a0sx"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  print 2nd largest num from array using set <kbd>32 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-activity-6894672690045624321-gT5f"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> single line code to check for palindrome in JS  <kbd>33 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-365daysofcode-activity-6895047016309673984-hrqN"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> how to view your github repo in VScode on chrome itself ! <kbd>34 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-js-devcommunity-activity-6895426934688276480-Mbbq"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>   localStorage properties  <kbd>35 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6895757540710244352-gCQ-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Search filter List using vanilla JS  <kbd>36 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6896089498900336640-HeuF"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  Simple animation in CSS  <kbd>37 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6896495302543491072-Rd0m"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> how to vibrate device using JavaScript   <kbd>38 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-devcommunity-frontend-activity-6896805151428935680-QoqH"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> filter list application in vanilla JS with dynamic DATA  <kbd>39 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-activity-6897173246156824576-g3ae"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Get Starter Syntax & speed-up your development  <kbd>40 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_devhints-tldr-for-developer-documentation-activity-6897551054825680896-02Ot"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  toFixed() method  <kbd>41 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-devcommunity-activity-6897945111192240128-6AUQ"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  :is() pseudo-class function <kbd>42 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6898312877380300801-eaUR"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  indexOf property in JavaScript  <kbd>43 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-activity-6898656355251474432-amPM"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  Nullish coalescing operator '??'  <kbd>44 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-activity-6899053849206677504-CpBg?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  for in & for of loop with Array in JS  <kbd>45 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-activity-6899401056971739136-kY_W?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+        <article>
+            <h2> script to check tab is active or not  <kbd>46 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_javascript-frontend-devcommunity-activity-6899750560807862272--1dK?utm_source=linkedin_share&utm_medium=member_desktop_web"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+
+
+
+
+        <article>
+            <h2>How web works <kbd>1 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_html-css-javascript-activity-6883284386934996992-mmZ0"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article>
+            <h2>Primitive Datatypes in JavaScript <kbd>2 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_html-css-javascript-activity-6883766490240221184-qBXq"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>String Methods in JavaScript <kbd>3 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_string-method-guide-activity-6884164799484243968-ozJz"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS enabled console messages <kbd>4 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-css-activity-6884479191908200448-ORL4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2> How to rotate Text Vertical using CSS <kbd>5 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6884845445810585601-UlWh"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>console.dir use in JavaScript <kbd>6 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6885246772801888257-FFz3"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS variables use <kbd>7 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6885431431846264832-fUX-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+         <article>
+            <h2>CSS specificity <kbd>8 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-css-activity-6885743210564530176-SRDG"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        <article>
+            <h2>Accordion with HTML only <kbd>9 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-devcommunity-activity-6886284496690319360-6PTo"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Conditional (ternary) operator <kbd>360 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-javascript-devcommunity-activity-6886722225005740032-_PQO"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> Defer vs Async in script tag <kbd>361 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-html-javascript-activity-6887082232108916736-jEk4"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2> center a div ( multiple approaches ) <kbd>362 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6887432220571705344-Z5O-"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  rapid development with vscode  <kbd>363 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_js-frontend-devcommunity-activity-6887809425638268928-eJhM"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  inline-block property in CSS  <kbd>364 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_frontend-css-devcommunity-activity-6888082449402785792-F_x5"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+        <article>
+            <h2>  z-index property in CSS  <kbd>365 / 365</kbd> </h2>
+            <a target="_blank" href="https://www.linkedin.com/posts/pawan-deore-0bb60b1a4_css-frontend-activity-6888446401613754368-8EeQ"><button class="view d-flex">View Post &nbsp;<img src="icons/paperclip.svg" alt="paper clip" /> </button></a>
+        </article>
+        
+
+
+
     </div>
     
    
  <div class="container-w" id="contact-form" style="width:90%!important;">
-     
+<!--  calendaly setup - NOW     
+
       <div style="text-align:center">
             <h2> Start Your journey as Web Developer 🚀 </h2>
             <p> Submit your details i will get in touch with you shortly!</p>
@@ -289,11 +2143,15 @@ background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, F
 
      
      <iframe width="100%" height="700" loading="lazy" src="https://calendly.com/pawandeore/30min" ></iframe>
+
+ -->
+
+
      
-<!--
+
     <form id="my-form" action="https://formspree.io/f/mrgjqbpn" method="POST">
         <div style="text-align:center">
-            <h2> Start Your journey as Web Developer 🚀 </h2>
+            <h2> Start Your journey in Web 🚀 </h2>
             <p> Submit your details i will get in touch with you shortly!</p>
       </div>
         
@@ -319,7 +2177,7 @@ background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, F
         </ul>
     </form>
      
-     -->
+     
      
      
 </div>
