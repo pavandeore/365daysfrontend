@@ -20,11 +20,13 @@ a {
 .demo-btn {
     margin-left: auto!important;
     width: auto!important;
-    padding: 5px 20px!important;
+    padding: 5px 30px!important;
     border-radius: 4px!important;
-    border: 3px dashed #0064ff!important;
+    /* border: 3px dashed #0064ff!important; */
     cursor: pointer!important;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    background: -webkit-linear-gradient(to right, #f0b569, #FFB300)!important;
+    background: linear-gradient(to right, #f0b569, #FFB300) !important;
 }
 
 .align-items{
@@ -151,13 +153,19 @@ body {
 
 .container {
     margin: 0;
-    padding: 50px;
-
+    padding: 80px 80px 25px 80px;
 }
 
+.header-div {
+    margin-top: 50px;
+}
+
+
 .bg-black {
-    background: -webkit-linear-gradient(to right, #89216B, #DA4453);
-    background: linear-gradient(to right, #89216B, #DA4453);
+    background: linear-gradient(to right, #000, #1A0C4D);
+    background: -webkit-linear-gradient(to right, #000, #1A0C4D);
+    /* background: -webkit-linear-gradient(to right, #89216B, #DA4453);
+    background: linear-gradient(to right, #89216B, #DA4453); */
  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -196,6 +204,9 @@ small {
     article {
         flex-direction: column
     }
+    .container{
+        padding: 40px;
+    }
 }
 
 @media (max-width:650px) {
@@ -210,6 +221,10 @@ small {
     .demo-btn {
         margin-top: 25px!important;
     }
+
+    .container{
+        padding: 20px;
+    }
 }
 
 @media (max-width:400px) {
@@ -220,8 +235,8 @@ small {
 
 article {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-    padding: 15px;
-    margin-bottom: 30px;
+    padding: 30px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
