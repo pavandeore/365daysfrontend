@@ -3,7 +3,9 @@
 
 live at -  https://pavandeore.github.io/365daysfrontend/
 
+
+
 --------------
 
-Contributor
+Design Contributor
 - <a href="https://github.com/komalioruganti"> komali </a>
