@@ -273,7 +273,16 @@ kbd {
     margin-left: 10px
 }
 
-
+#search{
+    height:3rem;
+    width:45rem;
+    position: relative;
+    left:17rem;
+    top: -3.2rem;
+}
+.hide{
+    display:none;
+}
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155135658-5"></script>
@@ -296,7 +305,12 @@ kbd {
             <div class="shadow-icon"><a target="_blank" href="https://github.com/pavandeore"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> </a></div>
             <!-- <a href="#contact-form" style="margin-left:auto;"><div style="transform: scale(0.9);" class="shadow-icon demo-btn" >Start Your Journey</div></a> -->
         </div>
+
+        <div class="search-wrapper">
+            <input type = "search" id="search" placeholder="Search for Posts" data-search>
+        </div>
     </div>
+    
     <div class="container">
         <article>
             <h2>How web works <kbd>1 / 365</kbd> </h2>
@@ -2208,6 +2222,20 @@ kbd {
    
 <!-- Place this script at the end of the body tag -->
 <script>
+    const searchInput = document.querySelector("[data-search]");
+
+searchInput.addEventListener("input",e=>{
+    const value = e.target.value.toLowerCase();
+    const array = document.querySelectorAll("article");
+// var new_array = array.filter(element=> )
+array.forEach(post=>{
+    const isVisible = post.querySelector("h2").textContent.toLowerCase().includes(value)
+    post.classList.toggle("hide",!isVisible)
+})
+
+console.log(post);
+})
+
     var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
@@ -2238,7 +2266,7 @@ kbd {
       });
     }
     form.addEventListener("submit", handleSubmit)
-</script>
+    </script>
     
 
 </body>
